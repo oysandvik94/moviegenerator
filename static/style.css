@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+*{
+    font-family: 'Muli', sans-serif;
+}
+
+body{
+    background-color: #cccccc;
+}
+
+h1, h2, {
+    text-align: center
+}
+
+button{
+    width: 200px;
+    height: 75px;
+    position: relative;
+    left: 50%;
+    margin-left: -100px;
+}
