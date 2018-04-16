@@ -6,8 +6,10 @@
         <script src="{{ url_for('static', filename='script.js') }}"></script>
     </head>
     <body>
-        <h1>Generate movie title</h1>
-        <h2 id="title"></h2>
-        <button onclick="generateMovie">Click</button>
+        <div id="container">
+            <h1>Generate movie title</h1>
+            <h2 id="title"></h2>
+        </div>
+            <button onclick="generateMovie()">Click</button>
     </body>
     </html>

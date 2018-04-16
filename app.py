@@ -13,7 +13,10 @@ def index():
 @app.route("/requestMovie", methods=["GET"])
 def requestMovie():
     movies = ia.get_top250_movies()
-    return movies.choice()
+    names = []
+    for movie in movies:
+        names.append(movie["title"])
+    return random.choice(names)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8088)

@@ -3,7 +3,8 @@ function generateMovie() {
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4 && xhr.status == 200) {
             var result = xhr.responseText;
-            document.getElementById("title").value = result;
+            console.log(result)
+            document.getElementById("title").innerHTML = result;
         }
     };
     xhr.open("GET", "/requestMovie", true);
